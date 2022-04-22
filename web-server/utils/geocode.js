@@ -12,12 +12,8 @@ const geocode = (callback)=>{
 
     request( {url,json:true},(error,response)=>{
         if(error){
-            callback(error,undefined);
+            callback("Bursa verisi bulunamadı",undefined);
         }else{
-            // callback(undefined,{
-            //     temperature:response.body.current.temperature,
-            //     humidity:response.body.current.humidity,
-            // });
             callback(undefined,{boylam:response.body.features[0].center[0],enlem:response.body.features[1].center[1]});
         }
     });

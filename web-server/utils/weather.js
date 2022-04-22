@@ -12,6 +12,7 @@ const weather = (callback)=>{
             callback(undefined,{
                 temperature:response.body.current.temperature,
                 humidity:response.body.current.humidity,
+                pressure:response.body.current.pressure,
             });
         }
     });
