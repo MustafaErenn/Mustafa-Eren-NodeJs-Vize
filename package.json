@@ -1,12 +1,15 @@
 {
-  "name": "mustafa-eren-nodejs-vize",
+  "name": "midterm-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./web-server/src/app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
