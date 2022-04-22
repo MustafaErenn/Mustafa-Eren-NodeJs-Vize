@@ -1,7 +1,7 @@
 const express = require("express");
 const res = require("express/lib/response");
-const weather = require("../utils/weather");
-const geocode = require("../utils/geocode");
+const weather = require("./utils/weather");
+const geocode = require("./utils/geocode");
 const path = require("path");
 
 const publicDirectory = path.join(__dirname,"../public/index.html");
